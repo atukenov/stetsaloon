@@ -1,35 +1,25 @@
-import Hero from '../components/Hero'
-import ProductList from '../components/ProductList'
-import { getProductsInCollection } from '../lib/shopify'
-import Head from 'next/head'
+import StoreHeading from '@/components/StoreHeading'
+import ProductListings from '@/components/ProductListings'
+import { getAllProductsInCollection } from '@/lib/shopify'
 
-export default function Home({ products }) {
+function IndexPage({ products }) {
+
   return (
-   <div className="">
-      <Head>
-        <title>Modern eCommerce</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
-        <meta name='description' content='Modern eCommerce Development Course focusing on Shopify, Next.js, TailwindCSS, GraphQL. Additional topics include Storefront API, Static Site Generation, getStaticPaths, getStaticProps and more.'/>
-        <meta property="og:title" content="Modern eCommerce" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="" />
-        <meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg" />
-        <meta property="og:description" 
-        content="Modern eCommerce Development Course focusing on Shopify, Next.js, TailwindCSS, GraphQL. Additional topics include Storefront API, Static Site Generation, getStaticPaths, getStaticProps and more."/>
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:site_name" content="Modern eCommerce" />
-      </Head>
-      <Hero/>
-      <ProductList products={products}/>
-   </div>
+    <div className="mx-auto max-w-6xl">
+      <StoreHeading />
+      <ProductListings products={products} />      
+    </div>
   )
 }
 
-export async function getStaticProps(context){
-  const products = await getProductsInCollection()
+export async function getStaticProps() {
+  const products = await getAllProductsInCollection()
 
-  return{
-    props:{ products },
+  return {
+    props: {
+      products
+    },
   }
 }
+
+export default IndexPage

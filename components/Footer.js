@@ -1,26 +1,20 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHeart } from '@fortawesome/free-solid-svg-icons'
 
-const navigation = [
-    {name: 'About', href: '#'},
-    {name: 'Jobs', href: '#'},
-    {name: 'Shop', href: '#'},
-    {name: 'Terms and Conditions', href: '#'}
-]
-
-export default function Footer() {
+function Footer() {
   return (
-    <footer className="bg-white">
-      <div className="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
-        <nav className="flex flex-wrap justify-center">
-            {
-                navigation.map((item,i) => (
-                    <div key={i} className="px-6 py-2">
-                        <a href="{item.href}" className="text-gray-500 hover:text-gray-900">{item.name}</a>
-                    </div>
-                ))
-            }
-        </nav>
-        <p className="mt-8 text-center text-gray-400">&copy; 2022 Shopify Nextjs Tailwind, All rights reserved.</p>
-      </div>
+    <footer className="py-4 flex justify-center font-primary items-center">
+      Built with <FontAwesomeIcon icon={faHeart} className="w-5 text-red-600 mx-1" /> by{' '}
+      <a
+        href="https://twitter.com/deepwhitman"
+        target="_blank"
+        rel="noreferrer"
+        className="text-palette-primary font-bold px-1"
+      >
+        Bilal Tahir
+        </a>
     </footer>
   )
 }
+
+export default Footer

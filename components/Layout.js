@@ -1,18 +1,22 @@
-import Footer from "./Footer"
-import Nav from "./Nav"
+import { CartProvider } from '@/context/Store'
+import Nav from '@/components/Nav'
+import Footer from '@/components/Footer'
 
-export default function Layout({ children }) {
+function Layout({ children }) {
+  
   return (
-    <div className="flex flex-col justify-between min-h-screen">
-        <Nav/>
+    <CartProvider>
+      <div className="flex flex-col justify-between min-h-screen">
+        <Nav />
 
         <main>
-            {children}
+          {children}
         </main>
-        
-        <footer>
-            <Footer/>
-        </footer>
-    </div>
+
+        <Footer />
+      </div>
+    </CartProvider>
   )
 }
+
+export default Layout
