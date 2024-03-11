@@ -1,154 +1,81 @@
-# Next.js + Tailwind CSS + Shopify Starter
+<h1 align=center>MOS-APP-NEXTJS</h1> 
+<p align=center>MosApp is a web development mosque template built in Nextjs. Perfect for listing details about a mosque, its pryaer timings & other announcements.</p>
 
-<div align="center">
-<img src="https://github.com/btahir/next-shopify-starter/blob/main/public/images/demo-store.gif">
-<p align="center">
-  <a href="https://doggystickers.vercel.app/">Live Demo</a> •
-  <a href="https://nextails.com/">See more starters</a> •
-  <a href="https://twitter.com/deepwhitman">Follow me on Twitter</a>
+<!-- <h2 align="center"> <a target="_blank" href="https://bigspring-light-nextjs.vercel.app/" rel="nofollow">Demo</a> | <a  target="_blank" href="https://pagespeed.web.dev/report?url=https%3A%2F%2Fbigspring-light-nextjs.vercel.app%2F&form_factor=desktop">Page Speed (100%)</a>
+</h2> -->
+
+
+
+<p align=center>
+  <a href="https://github.com/vercel/next.js/releases/tag/v13.0.6" alt="Contributors">
+    <img src="https://img.shields.io/static/v1?label=NEXTJS&message=13.0&color=000&logo=nextjs" />
+  </a>
+
+  <a href="https://github.com/mos-apps/mos-app-nextjs">
+    <img src="https://img.shields.io/github/license/themefisher/bigspring-light-nextjs" alt="license"></a>
+
+  <!-- <img src="https://img.shields.io/github/languages/code-size/themefisher/bigspring-light-nextjs" alt="code size"> -->
+  
 </p>
-</div>
 
-This is a fully functional eCommerce store that uses Next.js + Tailwind CSS in the front end and leverages the Shopify Storefront API to interact with your Shopify backend. You can see a Live Demo [here](https://doggystickers.vercel.app/ "Shopify store").
+![mos-app](https://appletree-images-v1.s3.eu-west-1.amazonaws.com/Apple+Tree/Screenshot+2023-03-29+at+16.00.42.png)
+👉🏻[View Live Preview](https://mos-app-nextjs.vercel.app/)
 
-We use GraphQL to query our Shopify data and store the cart information in localStorage to persist user session. Finally - we use Shopify Checkout to let the user
-purchase the items. You can see this play out in the example store. Yes - the store is functional and you can buy the stickers. :smiley:
+<!-- download -->
+## Download
 
-## High Performance
+Download this template from [Github](https://github.com/mos-apps/mos-app-nextjs)
 
-<table align="center">
-  <thead>
-    <tr>
-      <td>Desktop</td>
-      <td>Mobile</td>
-    <tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td valign="top"><img width="300" height="300" src="https://github.com/btahir/next-shopify-starter/blob/main/public/images/desktop-lighthouse.png"/></td>
-    <td valign="top"><img width="300" height="300" src="https://github.com/btahir/next-shopify-starter/blob/main/public/images/mobile-lighthouse.png"/></td>
-  </tr>
-  </tbody>
-</table>
+## Key Features
+- Simple and Minimal
+- Fully Responsive
+- Google analytics support
+- Caching enabled
+- Supports Contact Form
+- SEO Friendly
+<!-- installation -->
+## Installation
 
-## Mobile Responsive
+After downloading the template, you have some prerequisites to install. Then you can run it on your localhost. You can view the package.json file to see which scripts are included.
 
-<table align="center">
-  <thead>
-    <tr>
-      <td>Listings</td>
-      <td>Cart</td>
-    <tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td valign="top"><img width="300" height="300" src="https://github.com/btahir/next-shopify-starter/blob/main/public/images/responsive-main.gif"/></td>
-    <td valign="top"><img width="300" height="300" src="https://github.com/btahir/next-shopify-starter/blob/main/public/images/responsive-cart.gif"/></td>
-  </tr>
-  </tbody>
-</table>
+### Install prerequisites (once for a machine)
 
+* **Node Installation:** [Install node js](https://nodejs.org/en/download/) [Recommended LTS version]
 
-## The Tech
+### Local setup
 
-* Next.js + Tailwind CSS
-* GraphQL
-* localStorage to persist user session
-* Shopify
-* Vercel
-* Font Awesome Icons
-* Josefin Sans Google Font
+After successfully installing those dependencies, open this template with any IDE [[VS Code](https://code.visualstudio.com/) recommended], and then open the internal terminal of IDM [vs code shortcut <code>ctrl/cmd+\`</code>]
 
-## How to use
-
-By default, the store is set to query and show all products in one collection. 
-You can extend this to query multiple collections or your whole store.
-
-#### A note on pagination in the GraphQL queries
-
-The graphQL queries are all hardcoded to pull the maximum number of products/variants/images which
-is set to 250 by Shopify. I did this to keep things simple. Pagination would have made the queries complicated
-and 250 items is enough for most use cases.
-
-If you require pagination you will have to keep track of the [cursor](https://youtu.be/S37WsC8GzSA "graphql pagination") field and keep querying the data until you fetch all items.
-
-### Setup Environment variables
-
-Create a .env.local file in the root directory. You need to add these 4 variables:
+* Install dependencies
 
 ```
-NEXT_PUBLIC_SHOPIFY_STORE_FRONT_ACCESS_TOKEN=
-NEXT_PUBLIC_SHOPIFY_STORE_DOMAIN=
-NEXT_PUBLIC_SHOPIFY_COLLECTION=
-NEXT_PUBLIC_LOCAL_STORAGE_NAME=
+npm install
 ```
 
-The NEXT_PUBLIC_SHOPIFY_STORE_FRONT_ACCESS_TOKEN and NEXT_PUBLIC_SHOPIFY_STORE_DOMAIN (it will be something like DOMAIN_NAME.myshopify.com) are needed to access
-the Shopify Storefront API (make sure you have set it up in your Shopify store. See [docs](https://shopify.dev/docs/storefront-api/getting-started "Shopify store") for more information.
-
-NEXT_PUBLIC_SHOPIFY_COLLECTION is the name of the collection you want to pull in and NEXT_PUBLIC_LOCAL_STORAGE_NAME is the name of the key
-your users will store their cart information under. The exact name isn't that important although I suggest you make it unique so
-it is less likely to clash with other stored objects. Something like yourStoreNameShopifyStore where yourStoreName is your shopify store name will suffice.
-
-### Installation
-
-Change into the project directory and run the following command:
+* Run locally
 
 ```
-yarn && yarn dev
+npm run dev
 ```
 
-### Update Site Metadata
+After that, it will open up a preview of the template in your default browser, watch for changes to source files, and live-reload the browser when changes are saved.
 
-You can update your site metadata in the next.config.js file. 
+## Production Build
 
-```
-env: {
-  siteTitle: 'Your Company',
-  siteDescription: 'Your company description.',
-  siteKeywords: 'your company keywords',
-  siteUrl: 'https://doggystickers.xyz',
-  siteImagePreviewUrl: '/images/main.jpg',
-  twitterHandle: '@your_handle'
-} 
-```
-
-### Update Colors
-
-You can update the color palette in tailwind.config.js file.
+After finishing all the customization, you can create a production build by running this command.
 
 ```
-colors: {
-  palette: {
-    lighter: '',
-    light: '',
-    primary: '',
-    dark: '',
-  },
-},
+npm run build
 ```
-### Update Progressive Web App (PWA) data
 
-Update the manifest.json file and the icons under the public/images/icons folder.
+<!-- reporting issue -->
+## Reporting Issues
 
-You can use free tools online such as https://realfavicongenerator.net/ to quickly generate all the different icon sizes and favicon.ico file.
+We use GitHub Issues as the official bug tracker for this Template. It’s possible someone has already reported the same problem.
+If your problem or idea has not been addressed yet, feel free to [open a new issue](https://github.com/mos-apps/mos-app-nextjs/issues).
 
-### Deployment
+## customization
 
-You can deploy this using any number of services. Vercel and Netlify are the ones I prefer and very easy to setup and sync with your Github repo.
-
-### Credit
-
-The store was inspired by the awesome [Gatsby Swag Store](https://github.com/gatsbyjs/store.gatsbyjs.org "gatsby store") as well
-as countless other devs much more capable than me who put out their awesome work for free. 
-
-### License
-
-I have open sourced this code under the MIT License in the hope that if this helps people navigate their way around JAMStack eCommerce stores
-as the Gatsby Swag Store did for me when I first started out.
-
-### Buy Me Coffee! :coffee:
-
-If you did find this useful and want to show your appreciation you can buy me a [coffee](https://www.buymeacoffee.com/neum "coffee") :smiley:
-
-You can also buy some Doggy Stickers from the [store](https://doggystickers.vercel.app/ "store")! :dog:
+* You can set theme color in `config/theme.json`
+* You can set menu items in `config/menu.json`
+* You can set various configs in `config/config.json`

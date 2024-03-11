@@ -1,20 +1,38 @@
-const withPWA = require('next-pwa');
+/**
+ * @type {import('next').NextConfig}
+ */
 
-module.exports = withPWA({
-  future: { webpack5: true },
-  pwa: {
-    dest: 'public',
-    disable: process.env.NODE_ENV === 'development',
-  },
-  env: {
-    siteTitle: 'Doggy Stickers',
-    siteDescription: 'Get some Doggy Stickers!',
-    siteKeywords: 'dog, stickers, fun',
-    siteUrl: 'https://www.doggystickers.xyz',
-    siteImagePreviewUrl: '/images/main.jpg',
-    twitterHandle: '@deepwhitman'
-  },
+const nextConfig = {
+  reactStrictMode: true,
   images: {
-    domains: ['cdn.shopify.com'],
+    unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'cdn-images-1.medium.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'miro.medium.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'd3owavb6pntfxw.cloudfront.net',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'static.wixstatic.com',
+        port: '',
+        pathname: '/**',
+      },
+    ],
   },
-})
+};
+
+module.exports = nextConfig;
