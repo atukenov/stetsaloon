@@ -1,81 +1,54 @@
-<h1 align=center>MOS-APP-NEXTJS</h1> 
-<p align=center>MosApp is a web development mosque template built in Nextjs. Perfect for listing details about a mosque, its pryaer timings & other announcements.</p>
-
-<!-- <h2 align="center"> <a target="_blank" href="https://bigspring-light-nextjs.vercel.app/" rel="nofollow">Demo</a> | <a  target="_blank" href="https://pagespeed.web.dev/report?url=https%3A%2F%2Fbigspring-light-nextjs.vercel.app%2F&form_factor=desktop">Page Speed (100%)</a>
-</h2> -->
-
-
-
-<p align=center>
-  <a href="https://github.com/vercel/next.js/releases/tag/v13.0.6" alt="Contributors">
-    <img src="https://img.shields.io/static/v1?label=NEXTJS&message=13.0&color=000&logo=nextjs" />
-  </a>
-
-  <a href="https://github.com/mos-apps/mos-app-nextjs">
-    <img src="https://img.shields.io/github/license/themefisher/bigspring-light-nextjs" alt="license"></a>
-
-  <!-- <img src="https://img.shields.io/github/languages/code-size/themefisher/bigspring-light-nextjs" alt="code size"> -->
-  
-</p>
-
-![mos-app](https://appletree-images-v1.s3.eu-west-1.amazonaws.com/Apple+Tree/Screenshot+2023-03-29+at+16.00.42.png)
-👉🏻[View Live Preview](https://mos-app-nextjs.vercel.app/)
-
-<!-- download -->
-## Download
-
-Download this template from [Github](https://github.com/mos-apps/mos-app-nextjs)
-
-## Key Features
-- Simple and Minimal
-- Fully Responsive
-- Google analytics support
-- Caching enabled
-- Supports Contact Form
-- SEO Friendly
-<!-- installation -->
-## Installation
-
-After downloading the template, you have some prerequisites to install. Then you can run it on your localhost. You can view the package.json file to see which scripts are included.
-
-### Install prerequisites (once for a machine)
-
-* **Node Installation:** [Install node js](https://nodejs.org/en/download/) [Recommended LTS version]
-
-### Local setup
-
-After successfully installing those dependencies, open this template with any IDE [[VS Code](https://code.visualstudio.com/) recommended], and then open the internal terminal of IDM [vs code shortcut <code>ctrl/cmd+\`</code>]
-
-* Install dependencies
-
-```
-npm install
-```
-
-* Run locally
-
-```
+## Getting Started 🥱
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+First, run the development server:
+```bash
 npm run dev
+# or
+yarn dev
 ```
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-After that, it will open up a preview of the template in your default browser, watch for changes to source files, and live-reload the browser when changes are saved.
 
-## Production Build
+## Dark Mode 🌚
+![image](https://user-images.githubusercontent.com/23277339/116543111-165f2280-a90b-11eb-8aa5-bf79d5b107f6.png)
 
-After finishing all the customization, you can create a production build by running this command.
 
-```
-npm run build
-```
+## Light Mode 🌞
+![image](https://user-images.githubusercontent.com/23277339/116542004-c2a00980-a909-11eb-8de8-d2d0c52d6564.png)
 
-<!-- reporting issue -->
-## Reporting Issues
 
-We use GitHub Issues as the official bug tracker for this Template. It’s possible someone has already reported the same problem.
-If your problem or idea has not been addressed yet, feel free to [open a new issue](https://github.com/mos-apps/mos-app-nextjs/issues).
+## Grid Layout 🚀
 
-## customization
+![image](https://user-images.githubusercontent.com/23277339/116542365-35a98000-a90a-11eb-8cee-aeb01d7d7237.png)
 
-* You can set theme color in `config/theme.json`
-* You can set menu items in `config/menu.json`
-* You can set various configs in `config/config.json`
+
+
+## Inner Page
+![image](https://user-images.githubusercontent.com/23277339/116542654-84efb080-a90a-11eb-85f6-5a3d98de6aa0.png)
+
+
+
+![image](https://user-images.githubusercontent.com/23277339/116542642-80c39300-a90a-11eb-92a1-d8fb2bb66f08.png)
+
+
+
+
+
+
+## Learn More 😪
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Deploy on Vercel 🚀
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
