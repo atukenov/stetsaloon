@@ -1,34 +1,7 @@
 import { createClient } from "contentful";
 import Head from "next/head";
 import BlogCard from "../components/BlogCard";
-
-const blogs = [
-  {
-    name: "blog 1",
-    sys: {
-      id: 1,
-    },
-    fields: {
-      thumbnail: {
-        fields: {
-          file: {
-            url: "/img/logo-square.png",
-            details: {
-              image: {
-                width: 20,
-                height: 20,
-              },
-            },
-          },
-        },
-      },
-      title: "title",
-      desc: "desc",
-      date: "nov 1",
-      slug: "cartoon",
-    },
-  },
-];
+import { services } from "../data/services";
 
 export async function getStaticProps() {
   // const client = createClient({
@@ -40,7 +13,7 @@ export async function getStaticProps() {
 
   return {
     props: {
-      blogs: blogs,
+      blogs: services,
     },
     revalidate: 1,
   };

@@ -6,7 +6,7 @@ const BlogCard = ({ blog }) => {
 
   return (
     <article>
-      <Link href={"/" + slug}>
+      <Link href={slug}>
         <a>
           <div className="article-image">
             <div className="icon-arrow"></div>
