@@ -7,7 +7,9 @@ const Footer = () => {
         <div className="row">
           <div className="col-lg-4 col-md-3 col-sm-12">
             <Link href="/">
-              <a className="logo">STET BEAUTY</a>
+              <a className="logo">
+                STET<span style={{ fontSize: "20px" }}> </span>BEAUTY
+              </a>
             </Link>
           </div>
           <div className="col-lg-4 col-md-4 col-sm-12">

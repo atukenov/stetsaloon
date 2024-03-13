@@ -575,8 +575,8 @@ footer {
 
 footer .logo {
   display: inline-block;
-  width: 168px;
-  height: 24px;
+  width: 450px;
+  height: 50px;
   color: white;
   /* background-image: url("/img/logo-white-text.svg"); */
   background-repeat: no-repeat;
@@ -1445,5 +1445,5 @@ article.single .next-article a:hover {
 .logo {
   letter-spacing: 0;
   font-family: "Rubik Mono One", monospace;
-  font-size: 48px;
+  font-size: 45px;
 }
