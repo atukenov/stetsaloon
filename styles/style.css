@@ -220,7 +220,7 @@ main {
 }
 
 .page-title {
-  font-size: 5.25rem;
+  font-size: 3rem;
 }
 
 .page-content h2 {
@@ -569,15 +569,16 @@ header.hide {
 /* !Footer */
 
 footer {
-  background-color: var(--clr-eerie-black);
+  /* background-color: var(--clr-eerie-black); */
+  background-color: #ffffff;
   padding: 8.5rem 0;
+  color: black;
 }
 
 footer .logo {
   display: inline-block;
   width: 450px;
   height: 50px;
-  color: white;
   /* background-image: url("/img/logo-white-text.svg"); */
   background-repeat: no-repeat;
   border: none;
@@ -594,7 +595,7 @@ footer .footer-contacts .wrap {
 
 footer .footer-contacts p,
 footer .footer-contacts a {
-  color: var(--clr-white);
+  color: black;
   font-size: 1.125rem;
   line-height: 28px;
   margin: 0;
@@ -602,7 +603,8 @@ footer .footer-contacts a {
 
 footer .footer-contacts a {
   display: inline-block;
-  border-color: rgba(255, 255, 255, 0.32);
+  /* border-color: rgba(255, 255, 255, 0.32); */
+  border-color: rgb(255 0 0 / 32%);
 }
 
 footer .footer-contacts a:hover {
@@ -1446,4 +1448,5 @@ article.single .next-article a:hover {
   letter-spacing: 0;
   font-family: "Rubik Mono One", monospace;
   font-size: 45px;
+  color: #90131d;
 }

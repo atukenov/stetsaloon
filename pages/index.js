@@ -32,7 +32,7 @@ const Blog = ({ blogs }) => {
             <div className="row">
               <div className="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
                 <div className="page-intro mar-top-sm">
-                  <h1 className="page-title">УСЛУГИ</h1>
+                  <h1 className="page-title">Наши Услуги</h1>
                   {/* <p>Sharing super ideas in simple, minimal & elegant way.</p> */}
                 </div>
               </div>
