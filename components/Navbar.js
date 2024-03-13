@@ -7,21 +7,21 @@ const Navbar = () => {
         <div className="row">
           <div className="col-md-12">
             <a className="logo" href="/">
-              STET BEAUTY
+              STET<span style={{ fontSize: "20px" }}> </span>BEAUTY
             </a>
             <nav>
               <ul>
-                <li>
+                {/* <li>
                   <Link href="/">
                     <a>About</a>
                   </Link>
-                </li>
-                <li>
+                </li> */}
+                {/* <li>
                   <Link href="/">
-                    <a>Services</a>
+                    <a>Услуги</a>
                   </Link>
-                </li>
-                <li>
+                </li> */}
+                {/* <li>
                   <Link href="/">
                     <a>Work</a>
                   </Link>
@@ -30,15 +30,15 @@ const Navbar = () => {
                   <Link href="/">
                     <a>Blog</a>
                   </Link>
-                </li>
-                <li>
+                </li> */}
+                {/* <li>
                   <Link href="/">
                     <a>Contact</a>
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </nav>
-            <span className="nav-toggle">Menu</span>
+            {/* <span className="nav-toggle">Menu</span> */}
           </div>
         </div>
       </div>

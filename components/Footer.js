@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="row">
           <div className="col-lg-4 col-md-3 col-sm-12">
             <Link href="/">
-              <a className="logo"></a>
+              <a className="logo">STET BEAUTY</a>
             </Link>
           </div>
           <div className="col-lg-4 col-md-4 col-sm-12">
@@ -15,22 +15,24 @@ const Footer = () => {
               <div className="wrap">
                 <div className="address">
                   <p>
-                    City
+                    Атырау
                     <br />
-                    State, Country
+                    <a href="https://go.2gis.com/ygxza">
+                      Приезжайте: Мкр. Привокзальный-5, 11
+                    </a>
                   </p>
                 </div>
-                <a className="email" href="mailto:codegrain@gmail.com">
+                {/* <a className="email" href="mailto:codegrain@gmail.com">
                   fake@gmail.com
-                </a>
+                </a> */}
                 <br />
-                <a className="phone" href="tel:+919022332201">
-                  +91 111-222-6969
+                <a className="phone" href="tel:+77057474876">
+                  +7(705) 747 4876
                 </a>
               </div>
             </div>
           </div>
-          <div className="col-lg-4 col-md-5 col-sm-12">
+          {/* <div className="col-lg-4 col-md-5 col-sm-12">
             <div className="social-links">
               <ul>
                 <li>
@@ -55,7 +57,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>

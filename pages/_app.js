@@ -13,6 +13,12 @@ function MyApp({ Component, pageProps }) {
           content="We strategically design beautiful brands, websites, and digital products that actually work."
           property="og:description"
         ></meta>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap"
+          rel="stylesheet"
+        ></link>
       </Head>
       <Layout>
         <Component {...pageProps} />

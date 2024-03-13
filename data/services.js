@@ -1,6 +1,6 @@
 export const services = [
   {
-    name: "blog 1",
+    name: "usluga1",
     sys: {
       id: 1,
     },
@@ -8,19 +8,19 @@ export const services = [
       thumbnail: {
         fields: {
           file: {
-            url: "/img/logo-square.png",
+            url: "/img/service/usluga1.jpg",
             details: {
               image: {
-                width: 20,
-                height: 20,
+                width: 400,
+                height: 400,
               },
             },
           },
         },
       },
-      title: "title",
-      desc: "desc",
-      date: "nov 1",
+      title: `Парикмахерские услуги`,
+      // desc: "desc",
+      // date: "nov 1",
       slug: "https://wa.me/75551234567?text=Здравствуйте,%20интересует%20ваше%20объявление%20о%20продаже%20машины.",
     },
   },
@@ -33,19 +33,17 @@ export const services = [
       thumbnail: {
         fields: {
           file: {
-            url: "/img/logo-square.png",
+            url: "/img/service/usluga2.jpg",
             details: {
               image: {
-                width: 20,
-                height: 20,
+                width: 400,
+                height: 400,
               },
             },
           },
         },
       },
-      title: "title",
-      desc: "desc",
-      date: "nov 1",
+      title: "Космето-логические услуги",
       slug: "cartoon",
     },
   },
@@ -58,19 +56,17 @@ export const services = [
       thumbnail: {
         fields: {
           file: {
-            url: "/img/logo-square.png",
+            url: "/img/service/usluga3.jpg",
             details: {
               image: {
-                width: 20,
-                height: 20,
+                width: 400,
+                height: 400,
               },
             },
           },
         },
       },
-      title: "title",
-      desc: "desc",
-      date: "nov 1",
+      title: "Эстетика лица",
       slug: "cartoon",
     },
   },
@@ -83,19 +79,40 @@ export const services = [
       thumbnail: {
         fields: {
           file: {
-            url: "/img/logo-square.png",
+            url: "/img/service/usluga4.jpg",
             details: {
               image: {
-                width: 20,
-                height: 20,
+                width: 400,
+                height: 400,
               },
             },
           },
         },
       },
-      title: "title",
-      desc: "desc",
-      date: "nov 1",
+      title: "Уход за ногтями",
+      slug: "cartoon",
+    },
+  },
+  {
+    name: "blog 1",
+    sys: {
+      id: 1,
+    },
+    fields: {
+      thumbnail: {
+        fields: {
+          file: {
+            url: "/img/service/usluga5.jpg",
+            details: {
+              image: {
+                width: 400,
+                height: 400,
+              },
+            },
+          },
+        },
+      },
+      title: "Депиляция",
       slug: "cartoon",
     },
   },
